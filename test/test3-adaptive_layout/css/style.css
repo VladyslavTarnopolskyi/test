@@ -1,0 +1,435 @@
+@import "reset.css";
+*{
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+.container{
+    width: 1000px;
+}
+/*********************************************************************/
+/****************************Header***********************************/
+/*********************************************************************/
+.header{
+    background-color: #dcdcdc;
+}
+.head-site{
+    padding: 65px 0;
+}
+.head-site h1{
+    font-size: 0;
+}
+.tel a{
+    color: #757575;
+    font-size: 32px;
+    text-decoration: none;
+}
+.feedback{
+    color: #767676;
+    border-bottom: 1px dashed #777;
+    font-size: 25px;
+    font-weight: 700;
+}
+.feedback:hover{
+    color: #000;
+    text-decoration: none;
+}
+/**********************Modal***************/
+.modal-dialog{
+    margin-top: 284px;
+}
+.modal-content{
+    border-radius: 0;
+    /*margin-top: 285px;*/
+}
+.modal-header .modal-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+}
+.modal-header .close{
+    display: block;
+    background: url("../img/close-feedback.png") no-repeat;
+    margin: -52px -43px;
+    width: 27px;
+    height: 27px;
+    opacity: 1;
+}
+.modal-dialog{
+    width: 466px;
+}
+.modal-header{
+    padding-top: 25px;
+}
+.modal-body{
+    padding: 7px 62px;
+    font-size: 14px;
+}
+.modal-body input, .modal-body textarea{
+    width: 100%;
+    border: 1px solid #777;
+    color: #777;
+    display: block;
+    margin: 10px 0 15px;
+    padding: 10px;
+}
+.modal-body input:required{
+    border: 1px solid #f00;
+}
+.modal-body input[type="email"]{
+    box-shadow: inset 0 0 10px 4px rgba(255, 80, 80,.3);
+}
+.modal-body label{
+    display: block;
+    text-align: center;
+}
+input[type="email"]::placeholder{
+    color: #f00;
+    font-style: italic;
+
+}
+.modal-body input[type="submit"]{
+    width: 128px;
+    color: #fff;
+    background-color: #777;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px 106px;
+}
+a:focus{
+    outline: none;
+    text-decoration: none;
+    color: #777;
+}
+.navigation{
+    background-color: #777;
+}
+.nav>li>a{
+    margin: 0;
+    padding: 0;
+}
+.menu.nav.navbar-nav{
+    color: #fff;
+    font-size: 30px;
+    padding: 30px 0;
+}
+.menu li{
+    border-right: 2px solid #fff;
+    padding: 0 20px;
+    margin: 0;
+}
+.menu li:last-child{
+    border-right: none;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    text-decoration: underline;
+}
+/************************Carousel*************************/
+.carousel-inner>.item>img{
+    display: inline-block;
+}
+.carousel>.carousel-inner>.item{
+    text-align: center;
+}
+.carousel-control{
+    width: 20%;
+}
+.carousel-control .glyphicon-chevron-left{
+    left: 90%;
+}
+.carousel-control .glyphicon-chevron-right{
+    right: 90%;
+}
+.carousel-control.left{
+    background-image: none;
+}
+.carousel-control.right{
+    background-image: none;
+}
+.glyphicon-chevron-left:before{
+    display: block;
+    content: "";
+    background: url("../img/arrow-left.png") no-repeat;
+    width: 34px;
+    height: 61px;
+}
+.glyphicon-chevron-right:before{
+    display: block;
+    content: "";
+    background: url("../img/arrow-right.png") no-repeat;
+    width: 34px;
+    height: 61px;
+}
+/***********************************************************************/
+/**********************************Content******************************/
+/***********************************************************************/
+.breadcrumb{
+    background-color: #fff;
+}
+.breadcrumb a{
+    color: #777;
+    text-decoration: underline;
+}
+.breadcrumb a:hover{
+    color: #000;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.main-aside{
+    max-width: 220px;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.main-section{
+    max-width: 780px;
+}
+.main-section.col-sm-9{
+    padding: 0;
+}
+
+
+.main-aside a, .main-aside li{
+    color: #777;
+}
+.main-aside a:hover{
+    color: #000;
+}
+.submenu{
+    font-size: 14px;
+    line-height: 23px;
+}
+.catalog-active{
+    text-decoration: underline;
+}
+.main-aside .price-list{
+    display: block;
+    margin-top: 105px;
+    padding-top: 110px;
+    background: url("../img/xls-price-list.png") no-repeat 30% 0;
+    color: #444;
+    font-size: 30px;
+    font-weight: 700;
+}
+.thumbnail{
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 0;
+}
+.goods .col-sm-4{
+    padding-right: 0;
+}
+.buy-goods{
+    display: inline-block;
+    margin-top: 12px;
+    background: url("../img/addtobasket.png") no-repeat;
+    width: 28px;
+    height: 21px;
+    float: right;
+}
+.description{
+    padding: 20px 0 60px;
+    color: #777;
+}
+.price{
+    font-size: 28px;
+    font-weight: 700;
+}
+.pagination{
+    display: block;
+    text-align: center;
+}
+.pagination>li>a{
+    border: none;
+    color: #777;
+    float: none;
+}
+
+.pagination>.active>a{
+    background-color: #fff;
+    font-size: 20px;
+    color: #000;
+}
+.footer-articles{
+    padding: 30px 0 80px 0;
+    font-size: 13px;
+    border-top: 1px solid #777;
+}
+
+
+/*********************************************************************/
+/********************************Footer*******************************/
+/*********************************************************************/
+
+.footer{
+    margin-top: 10px;
+    padding: 50px 0;
+    background-color: #777;
+    font-size: 14px;
+    line-height: 26px;
+}
+.copyright{
+    color: #fff;
+}
+.copyright a, .footer-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-menu a{
+    border-bottom: 2px solid #b2b2b2;
+}
+.footer-menu a:hover, .copyright a:hover{
+    color: #b2b2b2;
+}
+.footer-logo{
+    padding-top: 10px;
+}
+
+/*********************************************************************/
+/********************************Media*******************************/
+/*********************************************************************/
+
+@media (min-width: 481px) and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    /************header**********/
+    .text-right{
+        text-align: center;
+    }
+    .head-site{
+        padding: 10px 0;
+    }
+    .head-site h1{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .tel a{
+        font-size: 20px;
+    }
+    .menu{
+        font-size: 20px;
+        padding: 0;
+    }
+    .menu li{
+        border-right: 0;
+        padding: 10px 0;
+    }
+    .footer-articles{
+        padding: 30px 25px 40px;
+        font-size: 13px;
+        border-top: 1px solid #777;
+    }
+    .footer-articles article{
+        padding: 20px;
+        border-bottom: 1px solid #777;
+    }
+    .carousel-control .glyphicon-chevron-left{
+        left: 50%;
+    }
+    .carousel-control .glyphicon-chevron-right{
+        right: 50%;
+    }
+
+    /**********************************Content******************************/
+
+    .main-aside{
+        width: 100%;
+    }
+    .main-section{
+        width: 100%;
+    }
+    .main-section.col-sm-9{
+        padding: 0 15px;
+    }
+    .main-aside .price-list{
+        margin: 20px 0;
+    }
+    .goods .col-sm-4{
+        padding-right: 0;
+    }
+
+}
+@media (max-width: 480px){
+    .container{
+        width: 100%;
+    }
+    .col-xs-6{
+        width: 100%;
+    }
+    /************header**********/
+    .text-right{
+        text-align: center;
+    }
+    .head-site{
+        padding: 10px 0;
+    }
+    .head-site h1{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .tel a{
+        font-size: 20px;
+    }
+    .menu{
+        font-size: 20px;
+        padding: 0;
+    }
+    .menu li{
+        border-right: 0;
+        padding: 10px 0;
+    }
+    .footer-articles{
+        padding: 30px 25px 40px;
+        font-size: 13px;
+        border-top: 1px solid #777;
+    }
+    .footer-articles article{
+        padding: 20px;
+        border-bottom: 1px solid #777;
+    }
+    .carousel-control .glyphicon-chevron-left{
+        left: 50%;
+    }
+    .carousel-control .glyphicon-chevron-right{
+        right: 50%;
+    }
+
+    /**********************************Content******************************/
+
+    .main-aside{
+        width: 100%;
+    }
+    .main-section{
+        width: 100%;
+    }
+    .main-section.col-sm-9{
+        padding: 0 15px;
+    }
+    .main-aside .price-list{
+        margin: 20px 0;
+    }
+    .goods .col-sm-4{
+        padding-right: 0;
+    }
+}
+/*********For IE***********/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .menu.nav.navbar-nav{
+        font-size: 28px;
+    }
+}
+/*********For EDGE***********/
+
+@supports (-ms-ime-align:auto) {
+    .menu.nav.navbar-nav{
+        font-size: 28px;
+    }
+}
