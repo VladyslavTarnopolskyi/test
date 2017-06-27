@@ -12,18 +12,23 @@
 .header{
     background-color: #dcdcdc;
 }
-.head-site{
-    padding: 65px 0;
+.head-site .tel{
+    padding-top: 35px;
 }
 .head-site h1{
+    padding: 65px 0;
     font-size: 0;
 }
 .tel a{
+    margin-right: -10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1.25px;
     color: #757575;
-    font-size: 32px;
+    font-size: 39px;
     text-decoration: none;
 }
 .feedback{
+    margin-right: -10px;
     color: #767676;
     border-bottom: 1px dashed #777;
     font-size: 25px;
@@ -110,13 +115,13 @@ a:focus{
 }
 .menu.nav.navbar-nav{
     color: #fff;
-    font-size: 30px;
-    padding: 30px 0;
+    font-size: 28px;
+    padding: 33px 0;
 }
 .menu li{
+    margin-top: -6px;
     border-right: 2px solid #fff;
     padding: 0 20px;
-    margin: 0;
 }
 .menu li:last-child{
     border-right: none;
@@ -127,21 +132,39 @@ a:focus{
 .navbar-inverse .navbar-nav>li>a:hover{
     text-decoration: underline;
 }
+.navbar-collapse{
+    padding-right: 0;
+}
+.nav .home-page, .nav .catalog-page, .nav .delivery-page, .nav .contacts-page{
+    letter-spacing: 1.7px;
+}
+.price-list-page{
+
+}
+.navbar-inverse .navbar-nav .price-list-page{
+    font-size: 31px;
+    margin-left: -8px;
+}
 /************************Carousel*************************/
 .carousel-inner>.item>img{
     display: inline-block;
 }
 .carousel>.carousel-inner>.item{
+    margin-top: -62px;
+    padding-left: 25px;
     text-align: center;
 }
 .carousel-control{
     width: 20%;
 }
 .carousel-control .glyphicon-chevron-left{
-    left: 90%;
+    left: 94%;
 }
 .carousel-control .glyphicon-chevron-right{
-    right: 90%;
+    right: 94%;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+    top: 41%;
 }
 .carousel-control.left{
     background-image: none;
@@ -168,6 +191,18 @@ a:focus{
 /***********************************************************************/
 .breadcrumb{
     background-color: #fff;
+    padding: 2px 0 0 0;
+    font-size: 14px;
+}
+.breadcrumb .home-page{
+    letter-spacing: 0.2px;
+}
+.breadcrumb>.active{
+    margin-left: 6px;
+    letter-spacing: 0.4px;
+}
+.breadcrumb li{
+    margin-right: -3px;
 }
 .breadcrumb a{
     color: #777;
@@ -183,17 +218,24 @@ h2{
 }
 .main-aside{
     max-width: 220px;
+    margin-top: -2px;
     font-size: 19px;
-    line-height: 28px;
+    line-height: 31px;
 }
 
 .main-section{
     max-width: 780px;
 }
 .main-section.col-sm-9{
+    margin-top: 7px;
     padding: 0;
 }
-
+.main-section .row{
+    margin-right: -24px;
+    margin-left: -21px;
+    word-spacing: 1.2px;
+    line-height: 16px;
+}
 
 .main-aside a, .main-aside li{
     color: #777;
@@ -203,7 +245,9 @@ h2{
 }
 .submenu{
     font-size: 14px;
-    line-height: 23px;
+    line-height: 22px;
+    padding-left: 25px;
+
 }
 .catalog-active{
     text-decoration: underline;
@@ -219,7 +263,7 @@ h2{
 }
 .thumbnail{
     background-color: #ddd;
-    padding: 20px;
+    padding: 18px 18px 10px;
     border-radius: 0;
 }
 .goods .col-sm-4{
@@ -228,24 +272,30 @@ h2{
 .buy-goods{
     display: inline-block;
     margin-top: 12px;
+    margin-right: 16px;
     background: url("../img/addtobasket.png") no-repeat;
     width: 28px;
     height: 21px;
     float: right;
 }
 .description{
-    padding: 20px 0 60px;
+    padding: 20px 0 46px;
     color: #777;
+    font-size: 19px;
+    line-height: 18px;
 }
 .price{
     font-size: 28px;
     font-weight: 700;
 }
 .pagination{
+    margin-left: 20px;
+    margin-top: 5px;
     display: block;
     text-align: center;
 }
 .pagination>li>a{
+    padding: 6px 8px;
     border: none;
     color: #777;
     float: none;
@@ -257,11 +307,15 @@ h2{
     color: #000;
 }
 .footer-articles{
-    padding: 30px 0 80px 0;
+    margin-top: 58px;
+    padding: 27px 0 70px 0;
     font-size: 13px;
     border-top: 1px solid #777;
 }
-
+.footer-articles .two-article{
+    padding-left: 30px;
+    padding-right: 0    ;
+}
 
 /*********************************************************************/
 /********************************Footer*******************************/
@@ -269,17 +323,25 @@ h2{
 
 .footer{
     margin-top: 10px;
-    padding: 50px 0;
+    padding: 39px 0;
     background-color: #777;
     font-size: 14px;
     line-height: 26px;
 }
 .copyright{
+    padding-top: 3px;
     color: #fff;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    word-spacing: 0.4px;
 }
 .copyright a, .footer-menu a{
     color: #fff;
     text-decoration: none;
+}
+.footer .footer-menu{
+    padding-left: 31px;
+    padding-top: 2px;
 }
 .footer-menu a{
     border-bottom: 2px solid #b2b2b2;
@@ -289,6 +351,7 @@ h2{
 }
 .footer-logo{
     padding-top: 10px;
+    padding-left: 55px;
 }
 
 /*********************************************************************/
